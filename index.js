@@ -1,9 +1,10 @@
-// let a=50;
+
+// let a=42;
 
 // if (a>=90) {
 //     console.log("Grade A");
     
-// }else if (a>80 && a<=89) {
+// }else if (a>=80 && a<=89) {
 //     console.log("Grade B");
     
 // } else if (a>=70 && a<=79) {
@@ -19,9 +20,9 @@
 
 
 
-// let a = 4;
+// let a = 2;
 // let b = 4;
-// let c = 0;
+// let c = 4;
 // if (0 <= a && 0 <= b && 0 <= c) {
 
 
@@ -41,7 +42,7 @@
 // }
 
 
-// let a=73;
+// let a=23;
 
 // if (a%2==0) {
 //     if (a>=50) {
@@ -63,10 +64,10 @@
 // }
 // }
 
-
+// let b=5;
 // for (let i = 1; i <=10 ; i++) {
-//     let a=5*i
-//     console.log(a);
+//     let a=b*i
+//     console.log(`${b} × ${i}=`,a);
     
 // }
 
@@ -79,14 +80,14 @@
 // console.log(result);
 
 
-// for (let i = 1; i < 5; i++) {
-//     let b="";
-//     for (let j = 1; j <= i; j++) {
-//         b +=j
+for (let i = 1; i < 5; i++) {
+    let b="";
+    for (let j = 1; j <= i; j++) {
+        b +=j
         
         
-//     }
-//     console.log(b);
+    }
+    console.log(b);
     
-// }
+}
 
