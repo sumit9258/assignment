@@ -115,3 +115,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
+let i=0
+let b="121"
+let c=""
+while(b<b.length){
+c+=b[i]
+i++
+}
+console.log(c);
+// if(c==b){
+// console.log("palindrome");
+
+// }else{
+//     console.log(" not palindrome");
+    
+// }
