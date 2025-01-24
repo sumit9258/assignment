@@ -35,15 +35,16 @@
 
 
 
-// let a=1;
+// let a=0;
 // let b=1;
-// console.log(a);                         //  5
+// console.log(a);                         
+// console.log(b);                         //  5
 
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(b);
+// for (let i = 3; i <= 10; i++) {
+//         let c=a+b;
+//     console.log(c);
     
-//     let c=a+b;
 //     a=b;
 //     b=c;
 
@@ -80,7 +81,7 @@
 
 
 
-// let a=50;
+// let a=100;
 // let b=0
 // for (let i = 1; i <= a; i++) {                                     //9
 //     if (i%2==0) {
