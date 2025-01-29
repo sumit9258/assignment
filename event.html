@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <button id="btn" >click Me</button>
+
+    <div style="background-color: aqua; height: 250px; width: 250px; margin-top: 50px;" id="div"></div>
+
+    <input style="margin-top: 50px;" id="inp" type="text">
+    <button id="btn2">ok</button> 
+
+    <p></p>
+
+    <button id="btnok">Click Me</button>
+    <button id="btnno">Disable Click</button> <br> <br>
+
+
+    <script>
+
+const btn=document.getElementById("btn")
+
+        btn.addEventListener("click",()=>{
+        
+        
+            if (btn.textContent=="click Me") {
+    btn.textContent="clicked"
+    
+}else{
+    btn.textContent="click Me"
+
+}
+
+
+})
+
+const div=document.getElementById("div")
+
+div.addEventListener("mouseover",()=>{
+    div.style.backgroundColor="blue"
+})
+
+
+div.addEventListener("mouseout",()=>{
+    div.style.backgroundColor="aqua"
+})
+
+const btn2=document.getElementById("btn2")
+const inp=document.getElementById("inp")
+
+const p=document.querySelector("p")
+
+btn2.addEventListener("click",()=>{
+    p.innerHTML +=inp.value +"<br>"
+})
+
+
+
+
+const okbtn=document.getElementById("btnok")
+const nobtn=document.getElementById("btnno")
+
+okbtn.addEventListener("click",()=>{
+alert("btn is active")
+})
+
+let btnvalue=true;
+nobtn.addEventListener("click",()=>{
+    // okbtn.disabled=false;
+    if (btnvalue) {
+        okbtn.disabled=true;
+        btnvalue=false
+    } 
+    else {
+        okbtn.disabled=false
+        btnvalue=true
+    }
+
+
+
+})
+
+
+
+const enterbtn=document.querySelector("body")
+
+enterbtn.addEventListener("keydown",()=>{
+    
+    if (event.keyCode==13) {
+        
+        alert("enter key was pressed")
+    }
+
+
+
+})
+
+
+    </script>
+    
+</body>
+</html>
